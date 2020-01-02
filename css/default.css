@@ -1,0 +1,361 @@
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: #707070;
+}
+
+/* CONTAINER */
+#container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+/* HEADER/NAV */
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/Header/Header_Back.png');
+    background-size: cover;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(240, 232, 232);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: fixed;
+    z-index: 9999;
+}
+
+nav .logo {
+    float: left;
+    margin: 20px 55px 20px 100px;
+}
+
+nav p {
+    display: inline-block;
+    margin: 0px;
+}
+
+nav .titre {
+    height: 25px;
+    margin: 37.5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav > ul {
+    margin: 0px;
+    margin-right: 100px;
+    padding: 0px;
+    float: right;
+}
+
+nav > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+    height: 60px;
+    padding: 20px 12px;
+}
+
+
+nav li {
+    list-style: none;
+}
+
+
+nav > ul > li > a {
+    padding: 20px 20px;
+    color: #707070;
+} 
+
+nav > ul > li:hover a {
+    padding: 15px 20px 20px 20px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.submenu {
+    display: none;
+}
+
+nav > ul > li:hover {
+    background-color: rgba(95, 82, 79, .4);
+    border-top: 5px solid rgb(63, 58, 57 );
+    border-bottom: none;
+    padding: 20px 12px;
+}
+
+nav li:hover a{
+    color: white;
+}
+
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+nav li:hover .downButton {
+    transform: rotateZ(180deg);
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+    transition-timing-function: ease-out;
+}
+
+
+.submenu li {
+    border-bottom: 2px solid #F9F4F4;  
+    font-size: 0.813rem;
+    background-color:  #707070;
+}
+
+.submenu li a {
+    color: white;
+    width: 150px;
+    padding: 10px 30px;
+}
+
+.active {
+    padding: 20px 12px 15px 12px;
+    border-bottom: 5px solid #707070;
+}
+
+.submenu > li:hover {
+    background-color: rgba(44, 44, 44, .9);
+}
+
+/* GALERIE */
+
+.galerie {
+    margin-top: 60px;
+}
+
+.galerie h2{
+    margin: 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.flex-galerie img {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.flex-galerie {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ACTUALITES */
+.actu {
+    width: 70%;
+    float: left;
+    margin-top: 50px;
+}
+
+.actu h2 {
+    margin: 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.flex-actu {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actu-item {
+    position: relative;
+    width: 40%;
+    height: 200px;
+    margin-right: 40px;
+}
+
+.actu-item img{
+    float: left;
+}
+
+.actu-item span {
+    position: absolute;
+    top: 170px;
+    left: 8px;
+    clear: both;
+}
+
+.actu-item span a {
+    text-decoration: none;
+    color: black;
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.actu-item h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 1.625rem;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.actu-item p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.red-ici {
+    color: black;
+    font-weight: bold;
+}
+
+/* TWITTER */
+.twitter {
+    float: left;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+/* CONTACT */
+.contact {
+    clear: both;
+    width: 100%;
+    height: 850px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.contact h3 {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.form  {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.form input {
+    display: block;
+    margin: auto;
+    width: 450px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    
+}
+
+.form textarea {
+    display: block;
+    margin: auto;
+    width: 450px;
+    height: 200px;
+    margin-top: 15px;
+} 
+
+.form label {
+    margin-left: 30%;
+    margin-right: 70%;
+    color: white;
+}
+
+.form-in {
+    padding-top: 30px;
+}
+
+/* LOCALISATION */
+.loca {
+    width: 100%;
+    height: 800px;
+}
+
+.loca h3 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.map {
+    display: block;
+    margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(240, 232, 232);
+}
+
+footer p {
+    float: left;
+    margin: 0;
+    margin: 37.5px 0;
+    margin-left: 100px;
+    height: 25px;
+    width: fit-content;
+}
+
+footer ul {
+    margin: 0px;
+    margin-right: 100px;
+    padding: 0px;
+    float: right;
+    height: 100%;
+
+}
+
+footer li {
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    position: relative;
+    height: 60px;
+    margin-top: 40px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #707070;
+    margin-right: 50px;
+}
+
+footer li a:hover {
+ color: black;
+}
+
+.footer-clickable {
+    color: black;
+
+}
+
