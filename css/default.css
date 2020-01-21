@@ -170,9 +170,10 @@ nav li:hover .downButton {
 
 /* ACTUALITES */
 .actu {
-    width: 70%;
+    width: 100%;
     float: left;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .actu h2 {
@@ -233,9 +234,10 @@ nav li:hover .downButton {
 
 /* TWITTER */
 .twitter {
-    float: left;
     width: 30%;
     margin-bottom: 50px;
+    clear: both;
+    margin: 0px auto;
 }
 
 /* CONTACT */
